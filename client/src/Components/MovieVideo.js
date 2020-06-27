@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import ReactPlayer from 'react-player'
-import Modal from 'react-modal'
 
 export default class MovieVideo extends Component {
     constructor(props){
