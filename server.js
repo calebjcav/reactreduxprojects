@@ -43,6 +43,13 @@ app.get("/api/movieList", cors(), (request, response, next) => {
   })
 })
 
+
+app.get("/api/login", cors(), (request, response, next) => {
+    response.json({auth: true})
+    next()   
+  })
+
+
 app.listen(app.get("port"), () => {
   console.log(`Find the server at: http://localhost:${app.get("port")}/`); // eslint-disable-line no-console
 });
