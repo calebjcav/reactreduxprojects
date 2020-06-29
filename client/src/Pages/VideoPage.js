@@ -7,7 +7,8 @@ export default class VideoPage extends React.Component {
     }
 
   render() {
-    return <div >
+    return this.props.LoginFulfilled ? <div>
+        
         <h1>Media Server App</h1>
         <MovieList />    
         <Modal>
@@ -15,5 +16,6 @@ export default class VideoPage extends React.Component {
             <p>Comments</p>
         </Modal>
     </div>
+    : null
   }
 }

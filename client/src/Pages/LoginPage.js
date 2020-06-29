@@ -1,5 +1,5 @@
 import React from 'react'
-import { MovieList, MovieVideo, Modal } from '../Containers'
+import { Username, Password, LoginButton } from '../Containers'
 
 export default class LoginPage extends React.Component {
     constructor(props){
@@ -7,13 +7,11 @@ export default class LoginPage extends React.Component {
     }
 
   render() {
-    return <div >
-        <h1>Media Server App</h1>
-        <MovieList />    
-        <Modal>
-            <MovieVideo />
-            <p>Comments</p>
-        </Modal>
-    </div>
+    return this.props.LoginFulfilled ? null : <div>
+        <h1>Login</h1>
+        <Username />    
+        <Password />
+        <LoginButton />
+        </div>
   }
 }
