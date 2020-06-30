@@ -7,7 +7,7 @@ export default class Password extends Component {
   }
 
   keydown = e => {
-    if ( e.key == 'Enter') {
+    if ( e.key === 'Enter') {
       this.props.actions.loginAction(true)
     } 
   }

@@ -1,7 +1,6 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import { MovieList, Modal, MovieVideo } from './Containers'
 import { Provider } from 'react-redux'
 import store from './Store'
 import { ActivePage } from './Containers'

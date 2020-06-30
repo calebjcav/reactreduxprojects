@@ -3,7 +3,7 @@ import { MovieList } from '../Components'
 import actions from '../Actions'
 
 const mapStatetoProps = state => ({
-    movieList: state.movieList
+    movieList: state.movies
 })
 
 const mapDispatchtoProps = dispatch => ({

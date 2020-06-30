@@ -3,7 +3,7 @@ import { Modal } from '../Components'
 import actions from '../Actions'
 
 const mapStatetoProps = state => ({
-    url: state.url
+    video: state.video
 })
 
 const mapDispatchtoProps = dispatch => ({

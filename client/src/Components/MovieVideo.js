@@ -9,8 +9,8 @@ export default class MovieVideo extends Component {
     render(){
         return(
             <div className ="modal-body">
-            {this.props.url.length > 0 ? <ReactPlayer
-                url={this.props.url}
+            {this.props.video.length > 0 ? <ReactPlayer
+                url={this.props.video}
                 className='react-player modal-body' 
                 playing
                 width='100%'

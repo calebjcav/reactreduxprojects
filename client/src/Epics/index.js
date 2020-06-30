@@ -8,7 +8,7 @@ export default (action$, state$) => action$.pipe(
     debounceTime(250),
     mergeMap(action => (
         ajax.getJSON("http://localhost:3002/api/movieList").pipe(
-            map(response => actions.FetchMovieListFulfilled(response))
+            map(response => actions.FetchMovieListFulfilled(response.movies))
         )
     ))
   );

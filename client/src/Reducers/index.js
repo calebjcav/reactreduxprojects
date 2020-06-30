@@ -1,15 +1,16 @@
 import { combineReducers} from 'redux'
 import thm from './Thumbnail'
-import mvl from './FetchMovieListFulfilled'
-import lf from './LoginFulfilled'
 import mv from './MovieVideo'
 import input from './base/input'
+import listFulfilled from './GetListFulfilled'
+import lf from './LoginFulfilled'
 
 export default combineReducers({
     Thumbnail: thm,
-    movieList: mvl,
-    url: mv,
+    video: mv,
+    LoginFulfilled: lf,
     username: input('username'),
     password: input('password'),
-    LoginFulfilled: lf
+    movies: listFulfilled('FETCH_MOVIELIST_FULFILLED'),
+    genres: listFulfilled('FETCH_GENRELIST_FULFILLED'),
 })

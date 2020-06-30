@@ -9,7 +9,7 @@ export default class Modal extends React.Component {
       }
 
   render() {
-    return this.props.url.length>0 ? <div className='modal'> 
+    return this.props.video.length>0 ? <div className='modal'> 
         {this.props.children}  
         <button
         onClick={this.onClose}>Close</button>

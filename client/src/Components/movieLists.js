@@ -14,11 +14,13 @@ export default class movieLists extends Component {
     render() {
         return (
         <div className='gallery-container'>
+            <p>Genre</p>
             <div className='gallery-grid'>
+            
             {this.props.movieList.map(
-                (movie) => 
-                <div key={movie.movieid} movieid={movie.movieid} onClick={this.watchMovie.bind(this)}>
-                    <Thumbnail movieid={movie.movieid} image={movie.image} title={movie.title} />
+                (movie, index) => 
+                <div key={movie.movieid} movieid={index} onClick={this.watchMovie.bind(this)}>
+                    <Thumbnail movieid={index} image={movie.image} title={movie.title} video={movie.video}/>
                 </div>
             )}
             </div>
